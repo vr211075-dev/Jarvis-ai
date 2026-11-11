@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#020b16">
+<title>J.A.R.V.I.S.</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid-bg"></div>
+
+<div id="boot" class="boot">
+  <button id="bootBtn" class="boot-btn">Initialize JARVIS</button>
+  <p>Tap to enable voice and sound</p>
+</div>
+
+<main class="app">
+  <header class="top">
+    <div>
+      <div id="clock" class="clock">--:--:--</div>
+      <div id="date" class="date">Loading date…</div>
+    </div>
+    <button id="muteBtn" class="chip" aria-pressed="false">Voice on</button>
+  </header>
+
+  <section class="core-wrap">
+    <button id="orb" class="orb" aria-label="Tap and speak to JARVIS">
+      <span class="ring r1"></span>
+      <span class="ring r2"></span>
+      <span class="ring r3"></span>
+      <span class="core"></span>
+    </button>
+    <div id="status" class="status">Standing by</div>
+  </section>
+
+  <section id="log" class="log" aria-live="polite"></section>
+
+  <form id="form" class="bar" autocomplete="off">
+    <input id="input" type="text" placeholder="Ask JARVIS anything…" enterkeyhint="send">
+    <button type="submit" class="send">Send</button>
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
